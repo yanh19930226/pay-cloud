@@ -1,1 +1,2 @@
 com\pay\merchant\app\MerchantApplicationBootstrap.class
+com\pay\merchant\app\vo\MerchantVo.class
