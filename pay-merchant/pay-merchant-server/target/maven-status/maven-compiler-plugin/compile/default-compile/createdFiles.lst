@@ -1,0 +1,13 @@
+com\pay\merchant\server\mapper\AppMapper.class
+com\pay\merchant\server\service\MerchantServiceImpl.class
+com\pay\merchant\server\mapper\StoreStaffMapper.class
+com\pay\merchant\server\mapper\StaffMapper.class
+com\pay\merchant\server\entity\Merchant.class
+com\pay\merchant\server\entity\Staff.class
+com\pay\merchant\server\mapper\StoreMapper.class
+com\pay\merchant\server\entity\App.class
+com\pay\merchant\server\config\MybatisPlusConfig.class
+com\pay\merchant\server\MerchantServerlicationBootstrap.class
+com\pay\merchant\server\entity\StoreStaff.class
+com\pay\merchant\server\mapper\MerchantMapper.class
+com\pay\merchant\server\entity\Store.class
