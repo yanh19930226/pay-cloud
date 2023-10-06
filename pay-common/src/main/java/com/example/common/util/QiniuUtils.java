@@ -80,15 +80,15 @@ public class QiniuUtils {
 //...其他参数参考类注释
         UploadManager uploadManager = new UploadManager(cfg);
 //...生成上传凭证，然后准备上传
-        String accessKey = "vG3krn6ZU9j_KCJEsOW-76A3RxEbgCkN6tkTDOf_";
-        String secretKey = "p04hR8a1151UXAb0K3GpYznPxAGuSj_9LbegmJuS";
-        String bucket = "shanjupay-m1";
+        String accessKey = "PLOp2ZixZR7MNZGt6v4S63ztQJtVw33Gone13yxr";
+        String secretKey = "LDhTKvdNAhbxj_IOiGVX0sYdud2waO7vIcXozTKR";
+        String bucket = "yandeqiniu";
 //默认不指定key的情况下，以文件内容的hash值作为文件名
         String key = UUID.randomUUID().toString()+".png";
         FileInputStream fileInputStream = null;
         try {
 
-            String filePath = "F:\\develop\\shanjupay\\1.png";
+            String filePath = "D:\\user-face-male.png";
             fileInputStream = new FileInputStream(new File(filePath));
             //得到本地文件的字节数组
             byte[] bytes = IOUtils.toByteArray(fileInputStream);
@@ -125,8 +125,8 @@ public class QiniuUtils {
         String domainOfBucket = "http://q2cdf3ibb.bkt.clouddn.com";
         String encodedFileName = URLEncoder.encode(fileName, "utf-8").replace("+", "%20");
         String publicUrl = String.format("%s/%s", domainOfBucket, encodedFileName);
-        String accessKey = "vG3krn6ZU9j_KCJEsOW-76A3RxEbgCkN6tkTDOf_";
-        String secretKey = "p04hR8a1151UXAb0K3GpYznPxAGuSj_9LbegmJuS";
+        String accessKey = "PLOp2ZixZR7MNZGt6v4S63ztQJtVw33Gone13yxr";
+        String secretKey = "LDhTKvdNAhbxj_IOiGVX0sYdud2waO7vIcXozTKR";
         Auth auth = Auth.create(accessKey, secretKey);
         long expireInSeconds = 3600;//1小时，可以自定义链接过期时间
         String finalUrl = auth.privateDownloadUrl(publicUrl, expireInSeconds);
@@ -135,6 +135,6 @@ public class QiniuUtils {
 
     public static void main(String[] args) throws UnsupportedEncodingException {
         //上传测试
-        QiniuUtils.getdownloadurl();
+        QiniuUtils.testUpload();
     }
 }

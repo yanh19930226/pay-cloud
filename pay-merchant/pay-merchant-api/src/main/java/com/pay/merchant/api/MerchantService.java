@@ -17,4 +17,12 @@ public interface MerchantService {
      * @return 注册成功的商户信息
      */
     MerchantDto createMerchant(MerchantDto merchantDTO) throws BusinessException;
+
+    /**
+     * 资质申请接口
+     * @param merchantId 商户id
+     * @param merchantDTO 资质申请的信息
+     * @throws BusinessException
+     */
+    void applyMerchant(Long merchantId,MerchantDto merchantDTO) throws BusinessException;
 }
