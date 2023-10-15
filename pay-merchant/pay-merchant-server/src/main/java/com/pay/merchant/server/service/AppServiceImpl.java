@@ -63,12 +63,14 @@ public class AppServiceImpl implements AppService {
 
     @Override
     public List<AppDTO> queryAppByMerchant(Long merchantId) throws BusinessException {
-        return null;
+        List<App> apps = appMapper.selectList(new LambdaQueryWrapper<App>().eq(App::getMerchantId, merchantId));
+        return AppCovert.INSTANCE.listentity2dto(apps);
     }
 
     @Override
     public AppDTO getAppById(String appId) throws BusinessException {
-        return null;
+        App app = appMapper.selectOne(new LambdaQueryWrapper<App>().eq(App::getAppId, appId));
+        return AppCovert.INSTANCE.entity2dto(app);
     }
 
     @Override

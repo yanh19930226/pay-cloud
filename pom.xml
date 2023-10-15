@@ -18,6 +18,8 @@
     <modules>
         <module>pay-common</module>
         <module>pay-merchant</module>
+        <module>pay-transaction</module>
+
     </modules>
 
     <properties>

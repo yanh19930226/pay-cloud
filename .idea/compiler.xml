@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/pay-transaction/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/pay-transaction/pay-transcation-server/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/pay-transaction/pay-transaction-api/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/pay-transaction/pay-transaction-app/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="pay-transcation-server" />
+        <module name="pay-transaction-api" />
         <module name="pay-merchant-api" />
+        <module name="pay-common" />
+        <module name="pay-transaction-app" />
         <module name="pay-merchant-server" />
         <module name="sailing" />
-        <module name="pay-common" />
         <module name="pay-merchant-app" />
       </profile>
     </annotationProcessing>
@@ -21,6 +30,10 @@
       <module name="pay-merchant-api" options="-parameters" />
       <module name="pay-merchant-app" options="-parameters" />
       <module name="pay-merchant-server" options="-parameters" />
+      <module name="pay-transaction" options="" />
+      <module name="pay-transaction-api" options="-parameters" />
+      <module name="pay-transaction-app" options="-parameters" />
+      <module name="pay-transcation-server" options="-parameters" />
       <module name="sailing" options="-parameters" />
     </option>
   </component>

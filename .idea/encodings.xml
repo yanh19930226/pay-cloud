@@ -7,6 +7,11 @@
     <file url="file://$PROJECT_DIR$/pay-merchant/pay-merchant-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pay-merchant/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pay-merchant/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-transaction/pay-transaction-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-transaction/pay-transaction-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-transaction/pay-transcation-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-transaction/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pay-transaction/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sailing/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sailing/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
